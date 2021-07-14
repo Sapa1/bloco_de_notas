@@ -88,7 +88,8 @@ class _SplashPageState extends State<SplashPage> {
               duration: Duration(seconds: 1),
               child: Align(
                 alignment: Alignment.bottomCenter,
-                child: Column(
+                child: Flex(
+                  direction: Axis.vertical,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.min,
                   children: [
