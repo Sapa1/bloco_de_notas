@@ -1,5 +1,7 @@
+import 'package:bloco_de_notas/src/features/saved_notes/saved_notes.dart';
+import 'package:bloco_de_notas/src/shared/components/component_container.dart';
 import 'package:bloco_de_notas/src/shared/constants/app_colors.dart';
-import 'package:bloco_de_notas/src/shared/constants/text_styles.dart';
+
 import 'package:flutter/material.dart';
 
 class NewNotePage extends StatefulWidget {
@@ -10,7 +12,6 @@ class NewNotePage extends StatefulWidget {
 }
 
 class _NewNotePageState extends State<NewNotePage> {
-  var save;
   late DropDownItemData _value;
   final List<DropDownItemData> list = [
     DropDownItemData(
@@ -220,18 +221,33 @@ class _NewNotePageState extends State<NewNotePage> {
           Align(
             alignment: Alignment.bottomRight,
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 78.0, right: 27),
-              child: TextButton(
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.blue)),
-                onPressed: () {},
-                child: Text(
-                  'SALVAR',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Roboto',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 14,
+              padding: const EdgeInsets.only(
+                bottom: 85.0,
+                right: 27,
+              ),
+              child: Container(
+                width: 73,
+                height: 32,
+                decoration: BoxDecoration(
+                  gradient: AppColors.blueGradient,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => SavedNotes(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    'SALVAR',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Roboto',
+                      fontWeight: FontWeight.w500,
+                      fontSize: 14,
+                    ),
                   ),
                 ),
               ),
