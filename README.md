@@ -1,16 +1,9 @@
 # bloco_de_notas
 
-A new Flutter project.
+![Splash_page](https://github.com/Sapa1/bloco_de_notas/blob/main/splash_page.png)
 
-## Getting Started
+![Home_page](https://github.com/Sapa1/bloco_de_notas/blob/main/home_page.png)
 
-This project is a starting point for a Flutter application.
+![New_note](https://github.com/Sapa1/bloco_de_notas/blob/main/new_note_page.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Saved_notes](https://github.com/Sapa1/bloco_de_notas/blob/main/saved_notes_page.png)
